@@ -9,6 +9,7 @@ import java.util.List;
 
 public class WhatsappUzerServices implements WhatsappUzerAble {
     List<WhatsappUzer>whatsappUzers = new ArrayList<>();
+    List<String>whatsappMassege = new ArrayList<>();
 
     @Override
     public String greateWhatsappAccount(WhatsappUzer whatsappUzer, List<Person>people) {
@@ -38,16 +39,19 @@ public class WhatsappUzerServices implements WhatsappUzerAble {
     }
 
     @Override
-    public String getMAssege(String password,String name,String massege, List<WhatsappUzer> uzers,List<WhatsappUzer>uzers2) {
+    public String getMAssege(String password,String name,List<String> massege, List<WhatsappUzer> uzers,List<WhatsappUzer>uzers2) {
         for (WhatsappUzer uzer : uzers) {
+
             for (WhatsappUzer whatsappUzer : uzers2) {
-             if(uzer.getPassword().equals(password)) {
-                if (whatsappUzer.getUzerName().equals(name)) {
-                    ArrayList<String> mas = new ArrayList<>();
-                    mas.add(massege);
-                    whatsappUzer.setMassege(mas);
-                    return "СОБШЕННИЕ ОТПРАВЛЕННО!!";
-                }
+                if (uzer.getPassword().equals(password)) {
+                    if (whatsappUzer.getUzerName().equals(name)) {
+                        whatsappMassege.add(uzer.getUzerName()+" : "+massege);
+
+                        whatsappUzer.setMassege((ArrayList<String>) this.whatsappMassege);
+                        return "СОБШЕННИЕ ОТПРАВЛЕННО!!";
+
+                    }
+
             }
             }
         }

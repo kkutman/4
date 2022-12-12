@@ -10,6 +10,6 @@ public interface WhatsappUzerAble {
     String greateWhatsappAccount( WhatsappUzer whatsappUzers,List<Person>people);
     List<WhatsappUzer>getWhatsappUzer();
     WhatsappUzer getProfil(String pasword,List<WhatsappUzer>whatsappUzers);
-    String getMAssege(String password,String name,String massege,List<WhatsappUzer>uzers,List<WhatsappUzer>uzers2);
+    String getMAssege(String password,String name,List<String> massege,List<WhatsappUzer>uzers,List<WhatsappUzer>uzers2);
 
 }

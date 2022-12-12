@@ -3,6 +3,8 @@ package java8.classes;
 import java8.enums.Countri;
 import java8.enums.Gender;
 
+import java.util.List;
+
 public class Person {
     private int id;
     private String firstName;
@@ -17,7 +19,10 @@ public class Person {
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
         this.countri = countri;
-        this.gender = gender;
+        this.gender = Gender.MALE;
+
+
+
     }
 
     public int getId() {

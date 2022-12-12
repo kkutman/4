@@ -1,5 +1,5 @@
 package java8.enums;
 
 public enum Countri {
-    BISHKEK;
+    BISHKEK,OSH,BATKEN,YSYK_KOL,JALAL_ABAD,NARYN,CHUY,
 }

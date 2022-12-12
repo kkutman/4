@@ -12,7 +12,6 @@ public class WhatsappUzer {
     private WhatsappStatus whatsappStatus;
     private String password;
     private ArrayList<String> massege ;
-    private List<Person>people;
 
     public WhatsappUzer(int id, String phoneNumber, String uzerName, WhatsappStatus whatsappStatus, String password,List<Person>people) {
         for (Person person : people) {
@@ -85,6 +84,7 @@ public class WhatsappUzer {
                 "\nUZER NAME : "+uzerName+
                 "\nWHATSAPP STATUS : "+whatsappStatus+
                 "\nPASWORD : "+password+
-                "\nMASSEGE : "+massege;
+                "\nMASSEGE : "+massege+
+                "\n*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*";
     }
 }
