@@ -1,26 +1,23 @@
 package java8.classes;
 
-import java8.enums.Countri;
+import java8.enums.Country;
 import java8.enums.Gender;
-
-import java.util.List;
 
 public class Person {
     private int id;
     private String firstName;
     private String lastName;
     private String dateOfBirth;
-    private Countri countri;
+    private Country countri;
     private Gender gender;
 
-    public Person(int id, String firstName, String lastName, String dateOfBirth, Countri countri, Gender gender) {
+    public Person(int id, String firstName, String lastName, String dateOfBirth, Country countri, Gender gender) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
         this.countri = countri;
         this.gender = Gender.MALE;
-
 
 
     }
@@ -57,11 +54,11 @@ public class Person {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Countri getCountri() {
+    public Country getCountri() {
         return countri;
     }
 
-    public void setCountri(Countri countri) {
+    public void setCountri(Country countri) {
         this.countri = countri;
     }
 
@@ -75,13 +72,13 @@ public class Person {
 
     @Override
     public String toString() {
-        return "\n<<<<<<<< PERSON PASPORT >>>>>>>>"+
-                "\nID : "+id+
-                "\nFIRST NAME : "+firstName+
-                "\nLAST NAME : "+lastName+
-                "\nDATE OF BIRTH : "+dateOfBirth+
-                "\nCOUNTRI : "+countri+
-                "\nGENDER : "+gender+
+        return "\n<<<<<<<< PERSON PASPORT >>>>>>>>" +
+                "\nID : " + id +
+                "\nFIRST NAME : " + firstName +
+                "\nLAST NAME : " + lastName +
+                "\nDATE OF BIRTH : " + dateOfBirth +
+                "\nCOUNTRI : " + countri +
+                "\nGENDER : " + gender +
                 "\n*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*";
 
 

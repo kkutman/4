@@ -5,7 +5,7 @@ import java8.enums.WhatsappStatus;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WhatsappUzer {
+public class WhatsappUser {
     private int id;
     private String phoneNumber;
     private String uzerName;
@@ -13,7 +13,7 @@ public class WhatsappUzer {
     private String password;
     private ArrayList<String> massege ;
 
-    public WhatsappUzer(int id, String phoneNumber, String uzerName, WhatsappStatus whatsappStatus, String password,List<Person>people) {
+    public WhatsappUser(int id, String phoneNumber, String uzerName, WhatsappStatus whatsappStatus, String password, List<Person>people) {
         for (Person person : people) {
             if(person.getId()== id){
                 this.id = id;
