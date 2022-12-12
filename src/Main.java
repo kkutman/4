@@ -1,6 +1,6 @@
 import java8.classes.Person;
-import java8.classes.WhatsappUzer;
-import java8.enums.Countri;
+import java8.classes.WhatSappUser;
+import java8.enums.Country;
 import java8.enums.Gender;
 import java8.enums.WhatsappStatus;
 import java8.services.impl.PersonServicesImpl;
@@ -46,7 +46,7 @@ public class Main {
                     System.out.print("DATE OF BIRTH-(XXXX-XX-XX) : ");
                     String dateOfBirt = scanner.nextLine();
 
-                    System.out.println(personServices.greate(new Person(id,firstName,lastName,dateOfBirt,Countri.valueOf(countri.toUpperCase()), Gender.valueOf(gender.toUpperCase()))));
+                    System.out.println(personServices.create(new Person(id,firstName,lastName,dateOfBirt, Country.valueOf(countri.toUpperCase()), Gender.valueOf(gender.toUpperCase()))));
                     break;
                 case 2:
                     System.out.println(personServices.getPerson());
@@ -62,7 +62,7 @@ public class Main {
                     String phoneNumber = scanner.nextLine();
                     System.out.print("PASWORD : ");
                     String password = scanner.nextLine();
-                    System.out.println(whatsappUzerServices.greateWhatsappAccount(new WhatsappUzer(id2,
+                    System.out.println(whatsappUzerServices.greateWhatsappAccount(new WhatSappUser(id2,
                             phoneNumber, whatsappName, WhatsappStatus.HELLO_I_AM_USING_WHATSAP,password,personServices.getPerson()),peoples));
                     break;
                 case 4:

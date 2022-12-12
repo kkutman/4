@@ -11,7 +11,7 @@ public class PersonServicesImpl implements PersonServicesAble {
     List<Person>people = new ArrayList<>();
     List<Gender>genders = new ArrayList<>();
     @Override
-    public String greate(Person people) {
+    public String create(Person people) {
         this.people.add(people);
         return "УСПЕШНО!!!";
     }

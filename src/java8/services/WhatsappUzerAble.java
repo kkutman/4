@@ -1,15 +1,15 @@
 package java8.services;
 
 import java8.classes.Person;
-import java8.classes.WhatsappUzer;
+import java8.classes.WhatSappUser;
 
 import java.util.List;
 
 public interface WhatsappUzerAble {
 
-    String greateWhatsappAccount( WhatsappUzer whatsappUzers,List<Person>people);
-    List<WhatsappUzer>getWhatsappUzer();
-    WhatsappUzer getProfil(String pasword,List<WhatsappUzer>whatsappUzers);
-    String getMAssege(String password,String name,List<String> massege,List<WhatsappUzer>uzers,List<WhatsappUzer>uzers2);
+    String greateWhatsappAccount(WhatSappUser whatsappUzers, List<Person>people);
+    List<WhatSappUser>getWhatsappUzer();
+    WhatSappUser getProfil(String pasword, List<WhatSappUser>whatsappUzers);
+    String getMAssege(String password, String name, List<String> massege, List<WhatSappUser>uzers, List<WhatSappUser>uzers2);
 
 }

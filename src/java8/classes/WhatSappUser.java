@@ -5,23 +5,23 @@ import java8.enums.WhatsappStatus;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WhatsappUser {
+public class WhatSappUser {
     private int id;
     private String phoneNumber;
-    private String uzerName;
+    private String userName;
     private WhatsappStatus whatsappStatus;
     private String password;
-    private ArrayList<String> massege ;
+    private ArrayList<String> massege;
 
-    public WhatsappUser(int id, String phoneNumber, String uzerName, WhatsappStatus whatsappStatus, String password, List<Person>people) {
+    public WhatSappUser(int id, String phoneNumber, String uzerName, WhatsappStatus whatsappStatus, String password, List<Person> people) {
         for (Person person : people) {
-            if(person.getId()== id){
+            if (person.getId() == id) {
                 this.id = id;
                 this.phoneNumber = phoneNumber;
-                this.uzerName = uzerName;
+                this.userName = uzerName;
                 this.whatsappStatus = whatsappStatus;
                 this.password = password;
-            }else {
+            } else {
 
             }
         }
@@ -44,12 +44,12 @@ public class WhatsappUser {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getUzerName() {
-        return uzerName;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUzerName(String uzerName) {
-        this.uzerName = uzerName;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     public WhatsappStatus getWhatsappStatus() {
@@ -78,13 +78,13 @@ public class WhatsappUser {
 
     @Override
     public String toString() {
-        return "\n<<<<<<< WHATSAPP ACCOUNT >>>>>>>>"+
-                "\nID : "+id+
-                "\nPHONE NUMBER : "+phoneNumber+
-                "\nUZER NAME : "+uzerName+
-                "\nWHATSAPP STATUS : "+whatsappStatus+
-                "\nPASWORD : "+password+
-                "\nMASSEGE : "+massege+
+        return "\n<<<<<<< WHATSAPP ACCOUNT >>>>>>>>" +
+                "\nID : " + id +
+                "\nPHONE NUMBER : " + phoneNumber +
+                "\nUZER NAME : " + userName +
+                "\nWHATSAPP STATUS : " + whatsappStatus +
+                "\nPASWORD : " + password +
+                "\nMASSEGE : " + massege +
                 "\n*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*";
     }
 }
